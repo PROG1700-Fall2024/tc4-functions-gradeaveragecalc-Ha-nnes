@@ -75,5 +75,4 @@ def main():
 main()
 
 
-# PROGRAM EXECUTION STARTS HERE
-main()
+
