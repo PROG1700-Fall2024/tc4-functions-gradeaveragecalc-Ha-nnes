@@ -6,32 +6,32 @@
 
 # Student Name: Hannes Meyer-Rahlfs
 
-def grade_to_numeric(course_name):
+def grade_to_numeric(course_Name):
    
-    print(f"\nEnter your grade for {course_name}:")
-    letter_grade = input("Letter grade (A, B, C, D, F): ").upper().strip()
+    print(f"\n Please enter your grade for {course_Name}:")
+    letter_Grade = input("Letter grade (A, B, C, D, F): ").upper().strip()
     modifier = input("Modifier (+, -, or leave blank): ").strip()
 
-    if letter_grade == "A":
+    if letter_Grade == "A":
         grade = 4.0
-    elif letter_grade == "B":
+    elif letter_Grade == "B":
         grade = 3.0
-    elif letter_grade == "C":
+    elif letter_Grade == "C":
         grade = 2.0
-    elif letter_grade == "D":
+    elif letter_Grade == "D":
         grade = 1.0
-    elif letter_grade == "F":
+    elif letter_Grade == "F":
         grade = 0.0
     else:
-        print("Invalid grade.")
+        print("Not a valid grade.")
         return None
 
-    if modifier == "+" and letter_grade != "A" and letter_grade != "F":
+    if modifier == "+" and letter_Grade != "A" and letter_Grade != "F":
         grade += 0.3
-    elif modifier == "-" and letter_grade != "F":
+    elif modifier == "-" and letter_Grade != "F":
         grade -= 0.3
     elif modifier == "+" or modifier == "-":
-        print("Modifier not valid for this grade.")
+        print("modifier is not valid for this grade.")
 
     if grade > 4.0:
         grade = 4.0
@@ -40,8 +40,8 @@ def grade_to_numeric(course_name):
 
 
 def main():
-    print("Welcome to the Grade Point Average (GPA) Calculator!")
-    print("please enter final letter grades for six courses in the promted area below.")
+    print("Hello there, welcome to the Grade Point Average (GPA) Calculator!")
+    print("Pretty please enter your final letter grades for six courses in the promted area below.")
     print("Valid letter grades are A, B, C, D, and F.")
     print("Modifiers can only be +, - or no modifier at all.\n")
     
@@ -68,7 +68,11 @@ def main():
         print(f"\nYour GPA is: {gpa:.1f}")
         print("=" * 50)
     else:
-        print("Error with input. Please try again.")
+        print("Error with your input. Please try again.")
+
+
+# PROGRAM EXECUTION STARTS HERE
+main()
 
 
 # PROGRAM EXECUTION STARTS HERE
